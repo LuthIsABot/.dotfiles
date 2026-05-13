@@ -46,7 +46,7 @@ alias vi='nvim'
 alias fvi='nvim $(fzf --preview="bat --color=always {}")'
 alias pulltodo='rclone copy dropbox:/todo.md ~/Documents/ --update && echo "todo.md synced"'
 alias pushnotes='rclone copy ~/esoft gdrive:/esoft --update --progress && echo "notes synced"'
-alias ls='ls -a'
+# alias ls='ls -a'
 
 source <(fzf --zsh)
 

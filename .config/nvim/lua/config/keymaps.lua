@@ -7,3 +7,8 @@ vim.keymap.set("n", "x", '"_d', { noremap = true, silent = true })
 
 -- leader y to copy to global clip
 vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, silent = true })
+
+-- run love in cwd
+vim.keymap.set("n", "<leader>rl", function()
+  vim.cmd("!love .")
+end, { desc = "Run LÖVE (love .)" })
